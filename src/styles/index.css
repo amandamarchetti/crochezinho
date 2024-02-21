@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/bhavuka');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
 
 * {
     padding: 0;
@@ -126,6 +127,7 @@ main {
     justify-content: center;
     width: 100%;
     height: 500px;
+    margin-left: 50px;
 }
 
 main > p {
@@ -133,12 +135,40 @@ main > p {
     border: 2px dashed #A2D2FF;
     text-align: justify;
     align-self: flex-start;
-    width: 483px;
+    width: 500px;
     height: 205px;
     padding-top: 29px;
     padding-bottom: 29px;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 40px;
     font-family: 'Bhavuka', sans-serif;
     font-size: 20px;
 }
+
+.coelho {
+    width: 160px;
+    height: 360px;
+    margin-top: -90px;
+    position:absolute;
+    margin-right: 590px;
+}
+
+.barraContato {
+    width: 459px;
+    height: 37px;
+    position: absolute;
+    margin-top: 250px;
+}
+
+.produtos {
+    text-align: center;
+    font-family: "Bayon", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #685B5B;
+    background-color: #F4F4F4;
+}
+
+
