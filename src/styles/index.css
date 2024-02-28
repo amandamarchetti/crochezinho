@@ -1,377 +1,374 @@
-@import url('https://fonts.cdnfonts.com/css/bhavuka');
-@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bubbler+One&family=Buenard&display=swap');
+@import url("https://fonts.cdnfonts.com/css/bhavuka");
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bubbler+One&family=Buenard&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #F4F4F4;
-    width: 100%;
-    height: 2700px;
-    background-image: url("/src/images/png/bonito-e-simples-padrao-de-vetor-de-bolinhas-claras-o-inverno-escandinavo-molda-o-fundo-rosa-azul-pa-removebg-preview.png");
-    background-repeat: repeat;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 2700px;
+  background-image: url("/src/images/png/bonito-e-simples-padrao-de-vetor-de-bolinhas-claras-o-inverno-escandinavo-molda-o-fundo-rosa-azul-pa-removebg-preview.png");
+  background-repeat: repeat;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 900px;
 }
 
 #cabecalho {
-    display: block;
-    background-image: url("/src/images/png/Group\ 22borderPink.png");
-    width: 100%;
-    height: 50px;
-    background-repeat: repeat-x;
+  display: block;
+  background-image: url("/src/images/png/Group\ 22borderPink.png");
+  width: 100%;
+  height: 50px;
+  background-repeat: repeat-x;
 }
 
 .logotipo {
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-    margin-right: 170px;
-    background-image: none;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  margin-right: 170px;
+  background-image: none;
 }
 
 .navHeader {
-    display: flex;
-    background-color: #F4F4F4;
-    border-top: 2px dashed #CDB4DB;
-    border-bottom: 2px dashed #CDB4DB;
-    padding: 7px;
-    margin-top: -70px;
-    gap: 10px;
+  display: flex;
+  background-color: #f4f4f4;
+  border-top: 2px dashed #cdb4db;
+  border-bottom: 2px dashed #cdb4db;
+  padding: 7px;
+  margin-top: -70px;
+  gap: 10px;
 }
 
 nav > a {
-    width: 300px;
-    text-align: center;
-    background-color: #FFC8DD;
-    border-radius: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-family: 'Bhavuka', sans-serif;
-    color: #685B5B;
-    font-size: 30px;
+  width: 300px;
+  text-align: center;
+  background-color: #ffc8dd;
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-family: "Bhavuka", sans-serif;
+  color: #685b5b;
+  font-size: 30px;
 }
 
 .slider {
-    display: block;
-    width: 950px;
-    height: 480px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
+  display: block;
+  width: 950px;
+  height: 480px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
 }
 
 .slider li {
-    list-style: none;
-    position: absolute;
+  list-style: none;
+  position: absolute;
 }
 
 .slider img {
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-    border-radius: 15px;
-    opacity: 0;
-    visibility: hidden;
-    border: 3px solid #CDB4DB;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  border: 3px solid #cdb4db;
 }
 
 .slider input {
-    display: none;
+  display: none;
 }
 
 .slider label {
-    background-color: #CDB4DB;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px #685B5B;
-    bottom: -30px;
-    cursor: pointer;
-    display: block;
-    height: 20px;
-    position: absolute;
-    width: 20px;
-    z-index: 10;
+  background-color: #cdb4db;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px 1px #685b5b;
+  bottom: -30px;
+  cursor: pointer;
+  display: block;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  z-index: 10;
 }
 
 .slider li:nth-child(1) label {
-    left: 300px;
+  left: 300px;
 }
 
 .slider li:nth-child(2) label {
-    left: 330px;
+  left: 330px;
 }
 
 .slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 400px;
-    /* margin-left: 50px; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  /* margin-left: 50px; */
 }
 
 main > p {
-    background-color: #F4F4F4;
-    border: 2px dashed #A2D2FF;
-    text-align: justify;
-    align-self: flex-start;
-    width: 800px;
-    height: 160px;
-    margin-top: 150px;
-    padding-top: 20px;
-    padding-bottom: 29px;
-    padding-right: 20px;
-    padding-left: 40px;
-    font-family: 'Bhavuka', sans-serif;
-    font-size: 20px;
+  background-color: #f4f4f4;
+  border: 2px dashed #a2d2ff;
+  text-align: justify;
+  align-self: flex-start;
+  width: 800px;
+  height: 160px;
+  margin-top: 150px;
+  padding-top: 20px;
+  padding-bottom: 29px;
+  padding-right: 20px;
+  padding-left: 40px;
+  font-family: "Bhavuka", sans-serif;
+  font-size: 20px;
 }
 
 .coelho {
-    width: 160px;
-    height: 360px;
-    margin-top: 50px;
-    position:absolute;
-    margin-right: 850px;
+  width: 160px;
+  height: 360px;
+  margin-top: 50px;
+  position: absolute;
+  margin-right: 850px;
 }
 
 .lã {
-    width: 160px;
-    height: auto;
-    margin-top: 280px;
-    position:absolute;
+  width: 160px;
+  height: auto;
+  margin-top: 280px;
+  position: absolute;
 }
 
 .barraContato {
-    width: 459px;
-    height: 37px;
-    position: absolute;
-    margin-top: 370px;
+  width: 459px;
+  height: 37px;
+  position: absolute;
+  margin-top: 370px;
 }
 
 .produtos {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 150px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 150px;
 }
 
 .tituloProdutos {
-    text-align: center;
-    font-family: "Bayon", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 36px;
-    color: #685B5B;
-    background-color: #F4F4F4;
+  text-align: center;
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: #685b5b;
+  background-color: #f4f4f4;
 }
 
 .containerRoxo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 287px;
-    background-color: #CDB4DB;
-    gap: 43px;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 287px;
+  background-color: #cdb4db;
+  gap: 43px;
+  margin-bottom: 50px;
 }
 
 .produto1 {
-    width: 190px;
-    height: 200px;
-    background-color: #D9D9D9;
+  width: 190px;
+  height: 200px;
+  background-color: #d9d9d9;
 }
 
 .produto2 {
-    width: 190px;
-    height: 200px;
-    background-color: #D9D9D9;
+  width: 190px;
+  height: 200px;
+  background-color: #d9d9d9;
 }
 
 .produto3 {
-    width: 190px;
-    height: 200px;
-    background-color: #D9D9D9;
+  width: 190px;
+  height: 200px;
+  background-color: #d9d9d9;
 }
 
 .legendaProdutos {
-    font-family: "Bubbler One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 26px;
-    text-align: center;
-    margin-top: 5px;
+  font-family: "Bubbler One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 5px;
 }
 
 .serviços {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    height: 287px;
-    margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 287px;
+  margin-top: 100px;
 }
 
 .retirada {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 230px;
-    border-right: 2px solid black;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 230px;
+  border-right: 2px solid black;
+  padding: 30px;
 }
 
 .entrega {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 230px;
-    border-right: 2px solid black;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 230px;
+  border-right: 2px solid black;
+  padding: 30px;
 }
 
 .embalagem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 230px;
-    padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 230px;
+  padding: 30px;
 }
 
 .tituloRetirada {
-    display: flex;
-    flex-direction: column;
-    font-family: "Bubbler One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bubbler One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 18px;
 }
 
 .descriçãoRetirada {
-    font-family: "Buenard", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    text-align: center;
+  font-family: "Buenard", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
 }
 
 .tituloEntrega {
-    font-family: "Bubbler One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
+  font-family: "Bubbler One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
 }
 
 .descriçãoEntrega {
-    font-family: "Buenard", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    text-align: center;
+  font-family: "Buenard", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
 }
 
 .tituloEmbalagem {
-    font-family: "Bubbler One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 25px;
+  font-family: "Bubbler One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .descriçãoEmbalagem {
-    font-family: "Buenard", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    text-align: center;
+  font-family: "Buenard", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  text-align: center;
 }
 
-.imagemSacola{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 58px;
-    height: 58px;
+.imagemSacola {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
 }
 
 .containerRoxoClaro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 310px;
-    background-color: #E2D5E2;
-    gap: 20px;
-    margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 310px;
+  background-color: #e2d5e2;
+  gap: 20px;
+  margin-bottom: 80px;
 }
 
 .containerDepoimento {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 310px;
 }
 
 .depoimento {
-    width: 302px;
-    height: 200px;
-    background-color: #F4F4F4;
-    border: 2px dashed #CDB4DB;
+  width: 302px;
+  height: 200px;
+  background-color: #f4f4f4;
+  border: 2px dashed #cdb4db;
 }
 
 .nomeCliente {
-    display: flex;
-    flex-direction: column;
-    font-family: "Buenard", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    background-color: #CDB4DB;
-    border-radius: 20px;
-    width: 302px;
-    margin-top: -5px;
-    box-shadow: 1px 1px 1px 1px #FFC8DD
+  display: flex;
+  flex-direction: column;
+  font-family: "Buenard", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  background-color: #cdb4db;
+  border-radius: 20px;
+  width: 302px;
+  margin-top: -5px;
+  box-shadow: 1px 1px 1px 1px #ffc8dd;
 }
 
 .redeSocial {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-
-
-
