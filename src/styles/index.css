@@ -14,7 +14,7 @@ body {
   background-color: #f4f4f4;
   width: 100%;
   height: 2700px;
-  background-image: url("/src/images/png/bonito-e-simples-padrao-de-vetor-de-bolinhas-claras-o-inverno-escandinavo-molda-o-fundo-rosa-azul-pa-removebg-preview.png");
+  background-image: url(/src/images/png/bonito-e-simples-padrao-de-vetor-de-bolinhas-claras-o-inverno-escandinavo-molda-o-fundo-rosa-azul-pa-removebg-preview.png);
   background-repeat: repeat;
 }
 
@@ -29,7 +29,7 @@ header {
 
 #cabecalho {
   display: block;
-  background-image: url("/src/images/png/Group\ 22borderPink.png");
+  background-image: url(/src/images/png/Group\ 22borderPink.png);
   width: 100%;
   height: 50px;
   background-repeat: repeat-x;
@@ -55,7 +55,7 @@ header {
 }
 
 nav > a {
-  width: 300px;
+  width: 150px;
   text-align: center;
   background-color: #ffc8dd;
   border-radius: 10px;
@@ -63,13 +63,13 @@ nav > a {
   padding-bottom: 2px;
   font-family: "Bhavuka", sans-serif;
   color: #685b5b;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .slider {
   display: block;
-  width: 950px;
-  height: 480px;
+  width: 850px;
+  height: 380px;
   margin: auto;
   margin-top: 20px;
   position: relative;
@@ -96,24 +96,24 @@ nav > a {
 }
 
 .slider label {
-  background-color: #cdb4db;
+    background-color: #cdb4db;
   border-radius: 20px;
   box-shadow: 1px 1px 1px 1px #685b5b;
-  bottom: -30px;
   cursor: pointer;
   display: block;
   height: 20px;
   position: absolute;
   width: 20px;
   z-index: 10;
+  margin-top: 450px;
 }
 
 .slider li:nth-child(1) label {
-  left: 300px;
+  left: 45%;
 }
 
 .slider li:nth-child(2) label {
-  left: 330px;
+  left: 63%;
 }
 
 .slider li input:checked ~ img {
@@ -136,14 +136,14 @@ main > p {
   text-align: justify;
   align-self: flex-start;
   width: 800px;
-  height: 160px;
+  height: 200px;
   margin-top: 150px;
   padding-top: 20px;
   padding-bottom: 29px;
   padding-right: 20px;
-  padding-left: 40px;
+  padding-left: 60px;
   font-family: "Bhavuka", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .coelho {
@@ -157,7 +157,7 @@ main > p {
 .lã {
   width: 160px;
   height: auto;
-  margin-top: 280px;
+  margin-top: 315px;
   position: absolute;
 }
 
@@ -165,7 +165,7 @@ main > p {
   width: 459px;
   height: 37px;
   position: absolute;
-  margin-top: 370px;
+  margin-top: 380px;
 }
 
 .produtos {
@@ -332,7 +332,6 @@ main > p {
   width: 100%;
   height: 310px;
   background-color: #e2d5e2;
-  gap: 20px;
   margin-bottom: 80px;
 }
 
@@ -346,6 +345,7 @@ main > p {
 }
 
 .depoimento {
+  display: flex;
   width: 302px;
   height: 200px;
   background-color: #f4f4f4;
@@ -371,4 +371,28 @@ main > p {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+@media (min-width:1025px) and (max-width: 1280px){
+
+  body {
+    flex-direction: column;
+  }
+
+}
+
+@media (min-width:769px) and (max-width: 1024px){
+
+  body {
+    flex-direction: column;
+  }
+  
+}
+
+@media (min-width:481px) and (max-width: 768px){
+
+  body {
+    flex-direction: column;
+  }
+  
 }
